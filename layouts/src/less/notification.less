@@ -1,0 +1,42 @@
+@import "variables.less";
+ 
+.notification-container {
+	border-radius: @notification-border-radius; 
+	width: 300px;
+	height: 74px;
+	background-color: rgba(0, 0, 0, 0.8); 
+	position: absolute;
+	padding: 5px;
+	color: @white-color;
+	bottom: 20px;
+	right: 20px;
+	
+	.close {
+		font-weight: bold;
+		color: @white-color;
+	}
+
+	.notification-body {	
+		.notification-image {
+			float: left;
+			width: 64px;
+			height: 64px; 
+			border-radius: @notification-border-radius;
+		}	
+
+		.notification-text-wrapper {
+			font-weight: bold;
+			float: left;
+			margin-left: 5px;
+			span {
+				text-align: center;
+			}
+		}
+	}
+
+	&:hover {
+		background-color: rgba(0, 0, 0, 1);
+		cursor: pointer;
+	}
+}
+
