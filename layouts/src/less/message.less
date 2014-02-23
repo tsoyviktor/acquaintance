@@ -1,0 +1,59 @@
+.messages {
+    .message-box {
+        &:extend(.alert);
+        &:extend(.alert-dismissable);
+
+        border-radius: 0px;
+        margin-bottom: 2px;
+        padding: 10px;
+
+        .media {
+            margin-top: 0px;
+
+            .message-photo {
+                width: 60px;
+                height: 60px;
+            }
+            .media-body {
+                .message-head {
+
+                    color: @name-color;
+                    font-weight: bold;
+                    font-size: 14px;
+
+                    small {
+                        color: @gray-light;
+                        font-weight: normal;
+                    }
+                }
+
+                .message-body {
+                    p{
+                        overflow: hidden;
+                        max-height: 20px;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+
+        &.message {
+            &:extend(.alert-success);
+            &:hover {
+                background-color: lighten(@state-success-bg, 5%);
+            }
+        }
+
+        &.info {
+            &:extend(.alert-info);
+            &:hover {
+                background-color: lighten(@state-info-bg, 5%);
+            }
+
+            a {
+                color: @state-info-text;
+                text-decoration: underline;
+            }
+        }
+    }
+}
