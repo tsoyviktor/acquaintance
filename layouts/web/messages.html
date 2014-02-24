@@ -10,7 +10,7 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 </head>
 
 <body>
@@ -74,11 +74,11 @@
                 <div class="messages">
                     <div class="message-box info">
                       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                      <div class="media">
+                      <div class="content">
                             <a class="pull-left" href="#">
-                                <img class="media-object message-photo" src="img/item2.png" alt="User Photo">
+                                <img class="message-photo" src="img/item2.png" alt="User Photo">
                             </a>
-                            <div class="media-body">
+                            <div class="content-text">
                               <div class="message-head">
                                 <span>Павел</span> <small>реклама</small>
                               </div>
@@ -95,16 +95,21 @@
                                   </a></p>
                               </div>
                           </div>
+                          <div class="message-menu">
+                            <button type="button" class="btn btn-default">
+                                <i class="glyphicon glyphicon-arrow-right"></i> Перейти
+                            </button>
+                          </div>
                         </div>
                     </div>
 
                     <div class="message-box message">
                       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                        <div class="media">
+                        <div class="content">
                             <a class="pull-left" href="#">
                                 <img class="media-object message-photo" src="img/profile.png" alt="User Photo">
                             </a>
-                            <div class="media-body">
+                            <div class="content-text">
                               <div class="message-head">
                                 <span>Инна</span> <small>20 лет, Варшава</small>
                               </div>
@@ -117,17 +122,42 @@
 
                     <div class="message-box message">
                       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                        <div class="media">
+                        <div class="content">
                             <a class="pull-left" href="#">
                                 <img class="media-object message-photo" src="img/profile.png" alt="User Photo">
                             </a>
-                            <div class="media-body">
+                            <div class="content-text">
                               <div class="message-head">
                                 <span>Екатерина</span> <small>18 лет, Омск</small>
                               </div>
                               <div class="message-body">
                                   <p>Привет. Давай знакомиться?</p>
                               </div>
+                          </div>
+                          <div class="message-menu">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-default">
+                                <i class="glyphicon glyphicon-comment"></i> Ответить
+                              </button>
+
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a href="#"><i class="glyphicon glyphicon-ban-circle"></i> Блокировать</a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><i class="glyphicon glyphicon-warning-sign"></i> Пожаловаться</a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><i class="glyphicon glyphicon-remove-circle"></i> Удалить</a>
+                                  </li>
+                                </ul>
+                              </div>
+
+                            </div>
                           </div>
                         </div>
                     </div>
