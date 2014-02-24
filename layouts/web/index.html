@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Dates</title>
-        <meta charset="UTF-8">
-        <link href="css/styles.css" rel="stylesheet">
-        <!--[if lt IE 9]>
+
+<head>
+    <title>Dates</title>
+    <meta charset="UTF-8">
+    <link href="css/styles.css" rel="stylesheet">
+    <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
 
                 <a class="navbar-brand" href="#">
-                    <span class="glyphicon glyphicon-heart"></span></a>
+                    <span class="glyphicon glyphicon-heart"></span>
+                </a>
 
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Симпатии</a></li>
-                    <li><a href="#"><span class="badge pull-right">+10</span>
-                    Онлайн</a></li>
-                    <li><a href="#"><span class="badge pull-right">+6</span>
-                    Сообщения</a></li>
+                    <li class="active"><a href="#">Симпатии</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="badge pull-right">+10</span>
+                            Онлайн</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="badge pull-right">+6</span>
+                            Сообщения</a>
+                    </li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="navbar-brand" href="#">
-                        <span class="glyphicon glyphicon-shopping-cart"></span>
-                    </a></li>
-                     <li><a class="user" href="#">
-                          <img class="media-object profile-img" src="img/profile.png" alt="user">
-                     </a></li>
-                    <li class="dropdown">
-                      <a href="#" class="navbar-brand dropdown-toggle" data-toggle="dropdown">
-                        <span class="glyphicon glyphicon-cog"></span>
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Кошелек</a></li>
-                        <li><a href="#">Настройки</a></li>
-                        <li><a href="#">Выход</a></li>
-                      </ul>
+                    <li>
+                        <a class="navbar-brand" href="#">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                        </a>
                     </li>
-                  </ul>
-                </div>
+                    <li>
+                        <a class="user" href="#">
+                            <img class="media-object profile-img" src="img/profile.png" alt="user">
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="navbar-brand dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Кошелек</a>
+                            </li>
+                            <li><a href="#">Настройки</a>
+                            </li>
+                            <li><a href="#">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <div class="wrapper container">
+    <div class="wrapper container">
         <div class="row">
             <div class="col-md-9">
                 <div class="well well-lg">Cool guy here</div>
@@ -57,24 +74,59 @@
 
             <div class="col-md-3">
                 <ul class="nav nav-pills nav-stacked">
-                  <li><a href="#"><span class="badge pull-left">+6</span>
-                  Посетители</a></li>
-                  <li><a href="#">Мое фото оценили</a></li>
-                  <li><a href="#"><span class="badge pull-left">+6</span>
-                  Кому я нравлюсь</a></li>
-                  <li><a href="#">Мне нравятся</a></li>
-                  <li><a href="#">Взаимные симпатии</a></li>
-                  <li><a href="#">Совместимость</a></li>
-                  <li><a href="#">Общаться</a></li>
+                    <li>
+                        <a href="#">
+                            <span class="badge pull-left">+6</span>
+                            Посетители</a>
+                    </li>
+                    <li><a href="#">Мое фото оценили</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="badge pull-left">+6</span>
+                            Кому я нравлюсь</a>
+                    </li>
+                    <li><a href="#">Мне нравятся</a>
+                    </li>
+                    <li><a href="#">Взаимные симпатии</a>
+                    </li>
+                    <li><a href="#">Совместимость</a>
+                    </li>
+                    <li><a href="#">Общаться</a>
+                    </li>
                 </ul>
             </div>
         </div>
         <footer>
-        <a href="#"><span class="label label-custom">О проекте</span></a>
-        <a href="#"><span class="label label-custom">Контакты</span></a>
-        <a href="#"><span class="label label-custom">Правила</span></a>
-        <a href="#"><span class="label label-custom">Поддержка</span></a>
+            <a href="#">
+                <span class="label label-custom">О проекте</span>
+            </a>
+            <a href="#">
+                <span class="label label-custom">Контакты</span>
+            </a>
+            <a href="#">
+                <span class="label label-custom">Правила</span>
+            </a>
+            <a href="#">
+                <span class="label label-custom">Поддержка</span>
+            </a>
         </footer>
+    </div>
+
+    <div class="notification-container">
+        <div class="notification-body">
+            <a href="#" onclick="this.parentNode.parentNode.style.display='none'" class="close">×</a>
+            <img class="notification-image" src="http://img13.fliphotos.com/s/12/42/3f/c9/ea/mgcjm58fzd8fxd7e1b7c5vqn.jpg">
+            <div class="notification-text-wrapper">
+                <span class="title">Title</span><br>
+                <span class="text">Notification text</span>
+            </div>
+            
         </div>
-    </body>
+    </div>
+
+
+
+</body>
+
 </html>
