@@ -5,7 +5,7 @@
 	width: 300px;
 	height: 74px;
 	background-color: rgba(0, 0, 0, 0.8); 
-	position: absolute;
+	position: fixed;
 	padding: 5px;
 	color: @white-color;
 	bottom: 20px;
@@ -28,8 +28,14 @@
 			font-weight: bold;
 			float: left;
 			margin-left: 5px;
-			span {
-				text-align: center;
+			width:200px;
+			overflow: hidden;
+			text-overflow:ellipsis;
+			white-space: nowrap;
+			margin-top:10px;
+			
+			.text, .title {
+				font-size: 12px;
 			}
 		}
 	}
