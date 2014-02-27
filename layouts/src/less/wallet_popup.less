@@ -15,9 +15,14 @@
             height: 400px;
             /*overflow-y: scroll;*/
             padding-top: 0;
-            h4 {
+            h4, h3 {
                 text-align: center;
                 color: @modal-text-title-color;
+                font-size: 16px;
+            }
+
+            h3 {
+                font-size: 20px;
             }
         }
     }
@@ -34,19 +39,19 @@
         .pay_item {
             height: 60px;
             display: table-cell;
-            border: 2px solid white;
-            border-radius:4px;
-            
-            &:hover {
-                border: 2px solid @pay-border-color;
-                cursor: pointer;
-            }
             
             .payment_info {
                 padding: 15px 0;
                 width: 90%;
                 margin: 5px auto;
-                height: 120px;
+                height: 130px;
+                border: 2px solid white;
+                border-radius:4px;
+
+                &:hover {
+                    border: 2px solid @pay-border-color;
+                    cursor: pointer;
+                }
                 
                 .pic {
                     margin: 0 auto;
@@ -60,20 +65,20 @@
                         background-position: -10px -60px;
                     }
 
-                    &.sms .img {
-                        background-position:;
+                    &.sms {
+                        background-position: -119px -60px;
                     }
-                    &.yandex .img {
-                        background-position:;
+                    &.yandex {
+                        background-position:-225px -60px;
                     }
-                    &.qiwi .img {
-                        background-position:;
+                    &.qiwi {
+                        background-position:-336px -60px;
                     }
-                    &.webmoney .img {
-                        background-position:;
+                    &.webmoney {
+                        background-position:-446px -60px;
                     }
-                    &.other .img {
-                        background-position:;
+                    &.other {
+                        background-position:-560px -60px;
                     }
                 }
                 
@@ -88,4 +93,15 @@
             }
         }
     }
+}
+
+.payment_switchable_wrapper {
+    height: 220px;
+}
+
+.payment {
+    width: 220px;
+    height: 184px;
+    border: 5px @pay-border-color double; 
+    border-radius: 10px;
 }
