@@ -1,0 +1,91 @@
+@import"variables.less";
+ .wallet_popup {
+    &:extend(.modal);
+    top:30px;
+    position: fixed;
+    .modal-content {
+        .modal-header {
+            margin: 10px 10px 0;
+            padding :0 0 10px;
+            text-align: center;
+            color: @modal-text-title-color;
+            border-bottom:dotted 1px @payment-caption-text-color;
+        }
+        .modal-body {
+            height: 400px;
+            /*overflow-y: scroll;*/
+            padding-top: 0;
+            h4 {
+                text-align: center;
+                color: @modal-text-title-color;
+            }
+        }
+    }
+}
+
+/*horisontal block with payment methods*/
+.pay_methods {
+    width: 100%;
+    display: table;
+    
+    .pay_methods_list {
+        display: table-row;
+        
+        .pay_item {
+            height: 60px;
+            display: table-cell;
+            border: 2px solid white;
+            border-radius:4px;
+            
+            &:hover {
+                border: 2px solid @pay-border-color;
+                cursor: pointer;
+            }
+            
+            .payment_info {
+                padding: 15px 0;
+                width: 90%;
+                margin: 5px auto;
+                height: 120px;
+                
+                .pic {
+                    margin: 0 auto;
+                    display: block;
+                    width: @payment-pic-width;
+                    height: 64px;
+                    background-image: url('../img/sprite-payments-all.png');
+                    background-repeat: no-repeat;
+                    
+                    &.bank-card {
+                        background-position: -10px -60px;
+                    }
+
+                    &.sms .img {
+                        background-position:;
+                    }
+                    &.yandex .img {
+                        background-position:;
+                    }
+                    &.qiwi .img {
+                        background-position:;
+                    }
+                    &.webmoney .img {
+                        background-position:;
+                    }
+                    &.other .img {
+                        background-position:;
+                    }
+                }
+                
+                .caption {
+                    font-size: 12px;
+                    color: @payment-caption-text-color;
+                    margin: 8px auto 0px;
+                    width: @payment-pic-width;
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
