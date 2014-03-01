@@ -29,6 +29,21 @@
     }
 }
 
+.message-head {
+    margin-bottom: 5px;
+    font-size: 14px;
+
+    span {
+        color: @name-color;
+        font-weight: bold;
+    }
+
+    small {
+        color: @gray-light;
+        font-weight: normal;
+    }
+}
+
 .messages {
     .message-box {
         &:extend(.alert);
@@ -56,18 +71,6 @@
             }
             .content-text {
                 width: 80%;
-
-                .message-head {
-                    color: @name-color;
-                    font-weight: bold;
-                    font-size: 14px;
-                    margin-bottom: 5px;
-
-                    small {
-                        color: @gray-light;
-                        font-weight: normal;
-                    }
-                }
 
                 .message-body {
                     p{
