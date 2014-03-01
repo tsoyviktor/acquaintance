@@ -1,0 +1,86 @@
+.stripe-container {
+    background-color: @gray-lighter;
+    border-radius: @border-radius-base;
+    .box-shadow(inset 0 1px 1px rgba(0,0,0,.05));
+
+    .stripe-item {
+        padding: 8px;
+        border-bottom: 1px solid @white-color;
+
+        .user-avatar {
+            &:extend(.media-object);
+
+            width: 90px;
+            height: 90px;
+        }
+
+        .stripe-item-message {
+            &:extend(.media-body);
+            &:extend(.message-head all);
+
+            small {
+                display: block;
+                margin-top: 5px;
+            }
+
+            .strip-item-head {
+                span {
+                    display: block;
+                    color: black;
+                    margin-bottom: 8px;
+                }
+
+                a {
+                    color: @name-color;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .user-photo {
+                width: 300px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.eval-btn-group {
+    margin-bottom: 10px;
+}
+
+.btn-variant-color(@color; @border-color) {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    width: 100px;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active, {
+        background-color: @color;
+        border-color: @border-color;
+    }
+}
+
+.btn-orange {
+  .btn-variant-color(@btn-orange-bg; @btn-orange-border);
+}
+
+.btn-pink {
+  .btn-variant-color(@btn-pink-bg; @btn-pink-border);
+}
+
+.btn-blue {
+  .btn-variant-color(@btn-blue-bg; @btn-blue-border);
+}
+
+.btn-green {
+  .btn-variant-color(@btn-green-bg; @btn-green-border);
+}
+
+.btn-violet {
+  .btn-variant-color(@btn-violet-bg; @btn-violet-border);
+}
