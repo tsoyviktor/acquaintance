@@ -1,63 +1,67 @@
 @body-bg: #F8F8FF;
-@text-color: black;
-@main-color: #ed6e3f;
-@first-color: white;
-@second-color: gold;
-
-@grid-gutter-width: 20px;
-
-@font-family-base: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-@font-size-base: 13px;
-@font-size-small: 11px;
-
-
-@border-shadow-color: #d9d4d4;
-@base-shadow-radius: 5px;
-@base-border-raduis: 4px;
-
-@nav-link-padding: 15px 10px;
-@nav-link-hover-bg: @main-color;
-@nav-pills-border-radius: 0px;
-
-@navbar-height: 40px;
-@navbar-inverse-link-color: @first-color;
-@navbar-inverse-link-active-color: @first-color;
-@navbar-inverse-link-hover-color: @second-color;
-
-@badge-bg: @main-color;
-@badge-color: @first-color;
+ @text-color: black;
+ @main-color: #ed6e3f;
+ @first-color: white;
+ @second-color: gold;
+ @grid-gutter-width: 20px;
+ @font-family-base: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+ @font-size-base: 13px;
+ @font-size-small: 11px;
+ @border-shadow-color: #d9d4d4;
+ @base-shadow-radius: 5px;
+ @base-border-raduis: 4px;
+ @nav-link-padding: 15px 10px;
+ @nav-link-hover-bg: @main-color;
+ @nav-pills-border-radius: 0px;
+ @navbar-height: 40px;
+ @navbar-inverse-link-color: @first-color;
+ @navbar-inverse-link-active-color: @first-color;
+ @navbar-inverse-link-hover-color: @second-color;
+ @badge-bg: @main-color;
+ @badge-color: @first-color;
 
 /*notification*/
-@notification-border-radius: 5px;
-@white-color: #ffffff;
+ @notification-border-radius: 5px;
+ @white-color: #ffffff;
 
 /*consts for messages*/
-@state-success-text: black;
-@state-success-bg: #c5dd9b;
+ @state-success-text: black;
+ @state-success-bg: #c5dd9b;
+ @state-info-text: white;
+ @state-info-bg: #c1e1f5;
+ @name-color: #2e6ecf;
+ @wrapp-border-radius: 5px;
+ @modal-text-title-color: #999;
+ @modal-orange-dark: rgb(240, 108, 4);
+ @payment-pic-width: 64px;
+ @pay-border-color: #f06c04;
+ @payment-caption-text-color: rgb(102, 102, 102);
+ @dark-grey-color: rgb(128, 128, 128);
 
-@state-info-text: white;
-@state-info-bg: #c1e1f5;
-@name-color: #2e6ecf;
-
-@wrapp-border-radius: 5px;
-@modal-text-title-color: #999;
-
-@payment-pic-width: 64px;
-@pay-border-color: #f06c04;
-@payment-caption-text-color: rgb(102, 102, 102);
 
 /*evaluate buttons*/
-@btn-orange-bg: #FF8000;
-@btn-orange-border: darken(@btn-orange-bg, 5%);
+ @btn-orange-bg: #FF8000;
+ @btn-orange-border: darken(@btn-orange-bg, 5%);
+ @btn-pink-bg: #FF33CC;
+ @btn-pink-border: darken(@btn-pink-bg, 5%);
+ @btn-blue-bg: #57ABFF;
+ @btn-blue-border: darken(@btn-blue-bg, 5%);
+ @btn-green-bg: #00FF1A;
+ @btn-green-border: darken(@btn-green-bg, 5%);
+ @btn-violet-bg: #B870FF;
+ @btn-violet-border: darken(@btn-violet-bg, 5%);
 
-@btn-pink-bg: #FF33CC;
-@btn-pink-border: darken(@btn-pink-bg, 5%);
 
-@btn-blue-bg: #57ABFF;
-@btn-blue-border: darken(@btn-blue-bg, 5%);
+/*mixin Arrow*/
 
-@btn-green-bg: #00FF1A;
-@btn-green-border: darken(@btn-green-bg, 5%);
-
-@btn-violet-bg: #B870FF;
-@btn-violet-border: darken(@btn-violet-bg, 5%);
+ .Arrow(@right-arrow-width, @arrow-height, @arrow-color) {
+    content:"";
+    border-top: @arrow-height solid transparent;
+    border-bottom: @arrow-height solid transparent;
+    border-left: @right-arrow-width solid @arrow-color;
+    width: 0;
+    height: 0;
+    display: block;
+    margin-right: -@right-arrow-width;
+    float: right;
+}

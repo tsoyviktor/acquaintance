@@ -119,7 +119,7 @@
 
     <div class="notification-container">
         <div class="notification-body">
-            <a href="#" onclick="this.parentNode.parentNode.style.display='none'" class="close">×</a>
+            <a href="#" onclick="$(this).closest('.notification-container').slideUp();" class="close">×</a>
             <img class="notification-image" src="">
             <div class="notification-text-wrapper">
                 <span class="title">Title</span>
@@ -189,7 +189,12 @@
                         <div class="coins_picker">
                             <div class="payment_block">
                                 <div class="payment">
-                                    
+                                    <ul>
+                                        <li class="active"><span class="price">200</span><span class="free">100 free</span></li>
+                                        <li><span class="price">600</span><span class="free">100 free</span></li>
+                                        <li><span class="price">1500</span><span class="free">100 free</span></li>
+                                        <li><span class="price">4000</span><span class="free">100 free</span></li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="coins"></div>
