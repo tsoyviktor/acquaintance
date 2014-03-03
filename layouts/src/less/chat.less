@@ -1,0 +1,107 @@
+@import "variables.less";
+
+.chat {
+	&:extend(.center-block);
+	&:extend(.nav.nav-pills.nav-stacked all);
+	/*border-radius: 4px;*/
+	
+	.header, .footer {
+		background-color: @chat-back-color;
+	}
+
+	.header {
+		height: @chat-header-height;
+		padding-right: 10px;
+
+		.user-profile {
+			width: @chat-header-height;
+			float: left;
+
+			img {
+				&:extend(.pull-left);
+				display: inline-block;
+				width: @chat-header-height;
+				height: @chat-header-height;
+				border-top-left-radius: 4px;
+			}
+		}
+
+		.user-info {
+			float: left;
+			height: 100%;
+			padding-left: 10px;
+			
+			.username {
+				height: 40%;
+				padding-top: 5px;
+
+				a {
+					font-weight: bold;
+				}
+
+				.status {
+					&:extend(.badge);
+					height: @status-radius;
+					width: @status-radius;
+					min-width: @status-radius;
+					padding: 0px;
+					background-color: @brand-success;
+				}
+			}
+
+			.pics {
+				height: 60%;
+				img {
+					margin-right: 5px;
+					width: 35px;
+					height: 35px;	
+				}			
+			}
+		}
+
+		.btn-group {
+			&:extend(.pull-right);
+			position: relative;
+			top: 40%;
+
+			.dropdown-menu {
+				right: 0;
+				left: auto;
+			}
+		}
+	}
+
+	.body {
+		&:extend(.modal-body);
+		height: @chat-body-hight;
+		padding: 5px;
+	}
+	.footer {
+		&:extend(.modal-footer);
+		height: @chat-footer-hight;
+		padding: 7px;
+
+		.textarea-holder {
+			width: 100%;
+			position: relative;
+
+			textarea {
+				width: 100%;
+				resize: none ;
+			}
+			.smile {
+				position: absolute;
+				background: url('../img/chat_smile_icon.png') no-repeat;
+				top: 5px;
+				right: 5px;
+				width: 16px;
+				height: 16px;
+				display: block;
+			}
+		}
+
+		.send {
+		}
+	}
+	
+}
