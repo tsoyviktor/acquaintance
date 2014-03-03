@@ -104,13 +104,13 @@
 }
 
 .payment {
-    width: 220px;
+    width: 45%;
     height: 184px;
     border: 8px @pay-border-color solid; 
     border-radius: 10px;
 
     ul {
-        padding: 5px;
+        padding: 10px;
 
         li {
             margin: 0px;
@@ -122,7 +122,7 @@
             text-align: right;
             
             .price {
-                background: url('../img/coins-icon-orange.png') no-repeat 5px 50%;
+                background: @icon-money-orange no-repeat 5px 50%;
                 &:extend(.pull-left);
                 padding-left: 30px;
                 color: @modal-orange-dark;
@@ -145,8 +145,32 @@
                 color:  @dark-grey-color;
                 height: 38px;
                 padding-left: 20px;
-                background: url('../img/coins-icon-gray.png') no-repeat 0px 50%;
+                background: @icon-money-grey no-repeat 0px 50%;
             }
         }
+    }
+}
+
+.total_wrapper {
+    &:extend(.pull-right);
+    width: 50%;
+
+    .amount {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        &:extend(.center-block);
+        font-size: 13px;
+        color: @dark-grey-color;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid  @modal-text-title-color;
+    }
+
+    .preceed {
+        &:extend(.btn);
+        &:extend(.btn-large);
+        &:extend(.btn-success);
+        &:extend(.center-block);
+        width: 120px;
     }
 }
