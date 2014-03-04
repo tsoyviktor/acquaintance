@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dates</title>
+    <meta charset="UTF-8">
+    <link href="css/styles.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="navbar-brand" href="#">
+                            <span class="glyphicon glyphicon-heart"></span>
+                        </a>
+                    </li>
+                    <li><a href="#">Симпатии</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="badge pull-right">+10</span>
+                            Онлайн</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <span class="badge pull-right">+6</span>
+                            Сообщения</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="navbar-brand" href="#">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="profile" href="#">
+                            <img class="media-object profile-img" src="img/profile.png" alt="user">
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="navbar-brand dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Кошелек</a>
+                            </li>
+                            <li><a href="#">Настройки</a>
+                            </li>
+                            <li><a href="#">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper container">
+        <div class="row">
+            <div class="col-md-9">
+            <!--BEGIN Message boxes -->
+                <div class="messages">
+                    <div class="message-box info">
+                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                      <div class="content">
+                            <a class="pull-left" href="#">
+                                <img class="message-photo" src="img/item2.png" alt="User Photo">
+                            </a>
+                            <div class="content-text">
+                              <div class="message-head">
+                                <span>Павел</span> <small>реклама</small>
+                              </div>
+                              <div class="message-body">
+                                  <p>Зарабатывай $700, стань волком с Уолл-Стрит, правь рабами.
+                                  Райские удовольствия, божественный нектар бесплатно без смс сейчас и навсегда где подвох пыщь пыщь
+                                  И еще больше, чем ты можешь себе вообразить
+                                  реки крови горы трупов тонны мороженого и кошелка котят
+                                  все твои желания
+                                  просто отдай нам свою душу
+                                  так-то</p>
+                                  <p><a href="#">
+                                  Это, а также бесплатные пончики...
+                                  </a></p>
+                              </div>
+                          </div>
+                          <div class="message-menu">
+                            <button type="button" class="btn btn-default">
+                                <i class="glyphicon glyphicon-arrow-right"></i> Перейти
+                            </button>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="message-box message">
+                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <div class="content">
+                            <a class="pull-left" href="#">
+                                <img class="media-object message-photo" src="img/profile.png" alt="User Photo">
+                            </a>
+                            <div class="content-text">
+                              <div class="message-head">
+                                <span>Инна</span> <small>20 лет, Варшава</small>
+                              </div>
+                              <div class="message-body">
+                                  <p>Привет</p>
+                              </div>
+                          </div>
+                          <div class="message-menu">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-default">
+                                <i class="glyphicon glyphicon-comment"></i> Ответить
+                              </button>
+
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a href="#"><i class="glyphicon glyphicon-ban-circle"></i> Блокировать</a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><i class="glyphicon glyphicon-warning-sign"></i> Пожаловаться</a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><i class="glyphicon glyphicon-remove-circle"></i> Удалить</a>
+                                  </li>
+                                </ul>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="message-box message">
+                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <div class="content">
+                            <a class="pull-left" href="#">
+                                <img class="media-object message-photo" src="img/profile.png" alt="User Photo">
+                            </a>
+                            <div class="content-text">
+                              <div class="message-head">
+                                <span>Екатерина</span> <small>18 лет, Омск</small>
+                              </div>
+                              <div class="message-body">
+                                  <p>Привет. Давай знакомиться?</p>
+                              </div>
+                          </div>
+                          <div class="message-menu">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-default">
+                                <i class="glyphicon glyphicon-comment"></i> Ответить
+                              </button>
+
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a href="#"><i class="glyphicon glyphicon-ban-circle"></i> Блокировать</a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><i class="glyphicon glyphicon-warning-sign"></i> Пожаловаться</a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><i class="glyphicon glyphicon-remove-circle"></i> Удалить</a>
+                                  </li>
+                                </ul>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+            <!--END Message boxes -->
+            </div>
+
+            <div class="col-md-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li>
+                        <a href="#">
+                            <span class="badge pull-left">+6</span>
+                            Посетители</a>
+                    </li>
+                    <li><a href="#">Мое фото оценили</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="badge pull-left">+6</span>
+                            Кому я нравлюсь</a>
+                    </li>
+                    <li><a href="#">Мне нравятся</a>
+                    </li>
+                    <li><a href="#">Взаимные симпатии</a>
+                    </li>
+                    <li><a href="#">Совместимость</a>
+                    </li>
+                    <li><a href="#">Общаться</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <a href="#">
+                <span class="label label-custom">О проекте</span>
+            </a>
+            <a href="#">
+                <span class="label label-custom">Контакты</span>
+            </a>
+            <a href="#">
+                <span class="label label-custom">Правила</span>
+            </a>
+            <a href="#">
+                <span class="label label-custom">Поддержка</span>
+            </a>
+        </footer>
+    </div>
+
+</body>
+
+</html>
