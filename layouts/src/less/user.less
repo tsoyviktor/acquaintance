@@ -1,0 +1,85 @@
+.main-photo {
+    display: block;
+    padding: 4px;
+    margin-bottom: @line-height-computed;
+    line-height: @line-height-base;
+    position: relative;
+    width: 90%;
+    border-radius: 4px;
+    background: #fff;
+    position: relative; 
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 
+                0 0 40px rgba(0, 0, 0, 0.1) inset;
+               
+
+    > img,
+    a > img {
+      &:extend(.img-responsive);
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 4px;
+    }
+}
+
+.user-info {
+     &:extend(.well);
+     &:extend(.well-sm);
+     background-color: @white-color;
+     border-color: @second-color;
+
+    .name-info {
+        font-size: 16px;
+    }
+
+    .add-info {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-style: italic;
+        color: gray;
+    }
+}
+
+.action-menu {
+    .dropdown-menu { 
+        &:extend(.button-menu .dropdown-menu);
+    }
+}
+
+.tile {
+    &:extend(.thumbnail all);
+    width: 160px;
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+    border-color: @second-color;
+
+    img {
+        position: absolute;
+        left: -100%;
+        right: -100%;
+        top: -100%;
+        bottom: -100%;
+        margin: auto; 
+        min-height: 100%;
+        min-width: 100%;
+        .grayscale(100%);
+
+        &:hover {
+            .grayscale(0%);
+            filter: none;
+        }
+    }
+
+    a&:hover,
+    a&:focus,
+    a&.active {
+        border-color: @main-color;
+    }
+}
+
+.separate-line {
+    width: 100%;
+    height: 1px;
+    #gradient > .radial(@second-color, white);
+    margin-bottom: 12px;
+}

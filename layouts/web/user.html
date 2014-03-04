@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dates</title>
+    <meta charset="UTF-8">
+    <link href="css/styles.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="navbar-brand" href="#">
+                            <span class="glyphicon glyphicon-heart"></span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">Симпатии</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="badge pull-right">+10</span>
+                            Онлайн</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="badge pull-right">+6</span>
+                            Сообщения</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="navbar-brand" href="#wallet" role="button" class="btn" data-toggle="modal">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="profile" href="#">
+                            <img class="media-object profile-img" src="img/profile.png" alt="user">
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="navbar-brand dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Кошелек</a>
+                            </li>
+                            <li><a href="#">Настройки</a>
+                            </li>
+                            <li><a href="#">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper container">
+        <div class="row">
+            <div class="col-md-9">
+<!--BEGIN profile -->
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="#carouselView" class="main-photo">
+                      <img src="img/test-photo.png" alt="User photo">
+                    </a>
+                  </div>
+
+                  <div class="col-md-8">
+                      <div class="user-info">
+                        <div class="name-info">Афанасий</div>
+                        <div class="add-info">19 лет, Краснодар</div>
+                      </div>
+                      <div class="action-menu">
+                        <div class="btn-group btn-group-justified">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            <i class="glyphicon glyphicon-envelope"></i> Написать
+                          </button>
+                        </div>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            <i class="glyphicon glyphicon-gift"></i> Сделать подарок
+                          </button>
+                        </div>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-heart"></i> Мне нравится
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a href="#"><i class="glyphicon glyphicon-ban-circle"></i> Блокировать</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="row">
+                <div class="separate-line"></div>
+                  <div class="col-md-3">
+                    <a href="#carouselView" class="tile">
+                      <img src="img/test-photo.png" alt="User photo">
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#carouselView" class="tile">
+                      <img src="img/test-photo.png" alt="User photo">
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#carouselView" class="tile">
+                      <img src="img/test-photo.png" alt="User photo">
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#carouselView" class="tile">
+                      <img src="img/test-photo.png" alt="User photo">
+                    </a>
+                  </div>
+                </div>
+<!--END profile -->
+            </div>
+            <div class="col-md-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li>
+                        <a href="#">
+                            <span class="badge pull-left">+6</span>
+                            Посетители</a>
+                    </li>
+                    <li><a href="#">Мое фото оценили</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="badge pull-left">+6</span>
+                            Кому я нравлюсь</a>
+                    </li>
+                    <li><a href="#">Мне нравятся</a>
+                    </li>
+                    <li><a href="#">Взаимные симпатии</a>
+                    </li>
+                    <li><a href="#">Совместимость</a>
+                    </li>
+                    <li><a href="#">Общаться</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <a href="#">
+                <span class="label label-custom">О проекте</span>
+            </a>
+            <a href="#">
+                <span class="label label-custom">Контакты</span>
+            </a>
+            <a href="#">
+                <span class="label label-custom">Правила</span>
+            </a>
+            <a href="#">
+                <span class="label label-custom">Поддержка</span>
+            </a>
+        </footer>
+    </div>
+
+</body>
+
+</html>
